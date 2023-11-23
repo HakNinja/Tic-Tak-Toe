@@ -24,7 +24,9 @@ class TTT{
     
         //start the game function
     int StartGame(){
+        System.out.println("\n\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("\n\n\tWHO WANT TO START THE GAMES FIRST:");
+        System.out.println("\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         // called Choice function
         Choice();
         int UserEnter=sign.nextInt();
@@ -60,15 +62,21 @@ class TTT{
 
         // called when player have to choose the symbols
     void ChoiceSymbol(){
-        System.out.println("WHO WANT TO CHOICE SYMBOL");
+        System.out.println("\n\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("\tWHO WANT TO CHOICE SYMBOL");
+        System.out.println("\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Choice();
         int UserEnter=sign.nextInt();
         if(!(UserEnter==1 || UserEnter==2)){
             WrongInput();
             ChoiceSymbol();
             }
-        System.out.println("\n\n\t"+Players[UserEnter-1]+", ENTER YOUR SYMBOL =>");
+            
+        System.out.println("\n\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("\t"+Players[UserEnter-1]+", ENTER YOUR SYMBOL =>");
+        System.out.println("\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("\n\t\t1. X");
+        
         System.out.println("\t\t2. 0");
         System.out.print("\n\tEnter 1 or 2:-");
         int UserEnterSymbol=sign.nextInt();
@@ -90,6 +98,7 @@ class TTT{
     
     // display the table update 
     void Display(){
+        System.out.println("\n\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("\tPlease remember the following positions\n");
         System.out.println("\t\t "+arr[0]+" | "+arr[1]+" | "+arr[2]);
         System.out.println("\t\t---+---+---");
